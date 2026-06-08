@@ -1,0 +1,19 @@
+{
+  "name": "user-interface-programming",
+  "version": "1.0.0",
+  "description": "The purpose of this app is to allow readers to keep track of the books they read. Readers will be able to sign up, add books to their library, keep track of their current progress, rate books, and search their library.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
