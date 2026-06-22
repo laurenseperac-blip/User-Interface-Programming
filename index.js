@@ -4,6 +4,7 @@ const app = express()
 const mongoose = require("mongoose")
 const userRoutes = require("./server/routes/user");
 const bookRoutes = require("./server/routes/book");
+const reviewRoutes = require("./server/routes/review");
 const path = require('path');
 
 mongoose.connect(process.env.dbURL)
@@ -14,6 +15,7 @@ app.use(express.json());
 
 app.use("/user", userRoutes);
 app.use("/book", bookRoutes);
+app.use("/review", reviewRoutes);
 
 //CORS middleware
 app.use(function(req, res, next) {
