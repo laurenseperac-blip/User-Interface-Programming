@@ -4,18 +4,22 @@
   "description": "The purpose of this app is to allow readers to keep track of the books they read. Readers will be able to sign up, add books to their library, keep track of their current progress, rate books, and search their library.",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server": "nodemon index.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "bootstrap": "^5.3.8",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
     "mongodb": "^7.3.0",
     "mongoose": "^9.7.0"
   },
   "devDependencies": {
+    "concurrently": "^10.0.3",
     "nodemon": "^3.1.14"
   }
 }
